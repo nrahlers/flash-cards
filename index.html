@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container main">
+      <div class="container stats-card">
+        <div class="row align-items-center">
+          <div class="col-xs-12">
+            <div class="card no-border bg-transparent">
+              <div class="card-body">
+                <ul class="list-inline">
+                  <li id="correct-answers" class="list-inline-item h4">
+                    Correct Count: <span id="correct-count">0</span>
+                  </li>
+                  <li class="list-inline-item">|</li>
+                  <li id="correct-answers" class="list-inline-item h4">
+                    Incorrect Count: <span id="wrong-count">0</span>
+                  </li>
+                  <li class="list-inline-item">|</li>
+                  <li class="list-inline-item"><button class="btn btn-primary round-border" onclick="start()">Start</button></li>
+                </ul>
+                <p>Click the start button to start playing. Once you read the question and think you have the answer 
+                  click the show answer button. If you think you got the answer correct press the correct buttun
+                if you think you got the answer wrong click the incorrect button. Have fun </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container flash-card">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <div class="card no-border bg-transparent">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <button type="button" id="showAnswerToggle" onclick="toggleQuestion(this)" class="btn btn-primary round-border">
+                      Show Answer
+                    </button>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <span id="question"></span>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <span id="answer"></span>
+                  </div>
+                  <div class="col-12 my-4">
+                    <span id="example" class="hidden"></span>
+                  </div>
+                  <div class="col-12">
+                    <span id="link" class="hidden"></span>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <div class="btn-group float-right">
+                      <button type="button" onclick="logAnswer(true)" class="btn btn-primary round-border">
+                        Correct
+                      </button>
+                      <button type="button" onclick="logAnswer(false)" class="btn btn-danger round-border">
+                        Wrong
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+      ‰
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

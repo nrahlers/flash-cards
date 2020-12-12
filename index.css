@@ -1,0 +1,27 @@
+.p-20 {
+  padding-top: 25%;
+}
+.no-border {
+  border: 0;
+}
+.flash-card {
+  width: 80%;
+  border: 2px solid;
+  border-radius: 45px;
+}
+.stats-card{
+    width: 80%;
+  }
+.round-border{
+    border-radius: 45px;
+}
+.main{
+   background-color: rgb(225, 222, 253);
+   margin-top: 3rem;
+   padding-bottom: 4rem;
+   border-radius: 45px;
+   filter: drop-shadow(0.50rem 0.50rem 0.6rem rgba(0, 0, 0, 0.5));
+}
+#text{
+    font-size: larger;
+}
